@@ -107,3 +107,26 @@ ul li span{
 ul li span:hover{
     background: #ff5945;;
 }
+
+/* media query for small screen */
+
+@media screen and (max-width: 477px) {
+    .todo-app {
+        width: 100%;
+        /* max-width: 540px; */
+        background: #fff;
+        margin: 100px auto 20px;
+        padding: 40px 30px 70px;
+        border-radius: 10px;
+    }
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #edeef0;
+        border-radius: 30px;
+        padding-left: 2px;
+        margin-bottom: 25px;
+    }
+    
+}

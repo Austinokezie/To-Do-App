@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../EDtech"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "To Do APP",
+		"liveServer.settings.port": 5501
+	}
+}
