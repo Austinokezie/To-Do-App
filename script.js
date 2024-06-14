@@ -14,22 +14,34 @@ function addTask(){
 
         //display li in the list container
         listcontainer.appendChild(li);
-        
+
+        // adding a delete button icon  
         let span = document.createElement("span");
         span.innerHTML = "\u00d7";
         li.appendChild(span);
     }
     inputbox.value = "";
+    saveData();
 
 }
 
 listcontainer.addEventListener("click", function(e){
     if(e.target.tagName === "LI"){
         e.target.classlist.toggle("checked");
+        saveData();
 
     }
     else if(e.target.tagName === "SPAN"){
         e.target.parentElement.remove();
+        saveData();
     }
 
-},false);
+}, false);
+
+function saveData(){
+    localStorage.setItem("data", listcontainer.innerHTML);
+}
+function showTask(){
+    listcontainer.innerHTML =localStorage.getItem("data");
+}
+showTask();

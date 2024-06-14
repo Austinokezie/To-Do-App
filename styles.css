@@ -74,10 +74,11 @@ ul li::before{
     height: 28px;
     width: 28px;
     border-radius: 50px;
-    /* background-image: url(img/unchecked.png); */
+    background-image: url(img/unchecked.png);
     background-size: cover;
     background-position: center;
-    top: 12px;
+    top: 8px;
+    left: 8px;
 
 
 
@@ -88,7 +89,7 @@ ul li.checked{
 
 }
 ul li.checked::before{
-     /* background-image: url(img/unchecked.png); */
+     background-image: url(img/checked.png);
 }
 
 ul li span{
@@ -128,5 +129,14 @@ ul li span:hover{
         padding-left: 2px;
         margin-bottom: 25px;
     }
-    
+    button {
+        border: none;
+        outline: none;
+        padding: 16px 20px;
+        background: #ff5945;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 40px;
+    }
 }
